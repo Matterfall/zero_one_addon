@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "DDD",
+        "E D"
+    ],
+    "key": {
+        "D": {
+            "item": "threecore:red_fabric"
+        },
+        "E": {
+            "item": "threecore:steel_ingot"
+        }
+    },
+    "result": {
+        "item": "zeroone:expanded_jack",
+        "count": 1
+    }
+}

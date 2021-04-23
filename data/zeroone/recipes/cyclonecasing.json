@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "D D",
+        "DDE"
+    ],
+    "key": {
+        "D": {
+            "item": "threecore:steel_ingot"
+        },
+        "E": {
+            "item": "threecore:red_fabric"
+        }
+    },
+    "result": {
+        "item": "zeroone:cyclonecasing",
+        "count": 1
+    }
+}

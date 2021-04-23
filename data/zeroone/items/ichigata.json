@@ -1,0 +1,256 @@
+{
+   "type": "threecore:armor",
+
+   "slot": "chest",
+
+   "properties": { 
+      "rarity": "rare"
+   },
+
+   "armor_material": "iron",
+
+   "layers": [
+   		    {
+            "type": "threecore:default",
+            "model": "zeroone:rider_suits",
+            "texture": "zeroone:textures/models/armor/ichigata/cycloneriser.png"
+          },
+          {
+            "type": "threecore:default",
+            "model": "zeroone:rider_suits",
+            "texture": {
+            "base": "zeroone:textures/models/armor/ichigata/ichigata.png",
+            "transformers": [
+                {
+                    "type": "threecore:alpha_mask",
+                    "mask": "zeroone:textures/models/alpha_masks/zeroone/transformation_#TIMER.png"
+                }
+            ],
+            "variables": {
+                "TIMER": {
+                  "type": "threecore:integer_nbt",
+                  "nbt_tag": "Opening"
+                }
+            },
+            "output": "zeroone:textures/models/armor/ichigata/ichigata_#TIMER"
+          }
+          },
+          {
+            "type": "threecore:default",
+            "glow": true,
+            "model": "zeroone:rider_suits",
+            "texture": "zeroone:textures/models/armor/ichigata/ichigata_glow.png",
+            "predicates": [
+              {
+                "type": "threecore:integer_nbt",
+                "nbt_tag": "Opening",
+                "value": 29
+              }
+            ]
+          }
+    ],
+
+    "abilities": {
+      "henshin": {
+          "ability": "threecore:opening_nbt_timer",
+          "max_timer": 29,
+          "icon": {
+              "type": "threecore:item",
+              "item": "zeroone:rockingkey"
+          },
+          "conditions": [
+              {
+                "type": "threecore:action",
+                "enabling": true
+              },
+              {
+                 "type": "threecore:equipment_slot",
+                 "slot": "chest"
+              },
+              {
+                "type": "threecore:item_integer_nbt",
+                "custom_title": {
+                  "text": "empty"
+                },
+                "invert": false,
+                "enabling": false,
+                "needs_key": false,
+                "slot": "chest",
+                "nbt_tag": "Opening",
+                "min": 0,
+                "max": 1
+              }
+          ]
+      }, 
+      "rockingtheend": {
+          "ability": "threecore:command",
+          "show_in_bar": true,
+          "hidden": false,
+          "title": {
+            "translate": "ability.rockingtheend"
+          },
+          "icon": {
+            "item": "minecraft:wither_rose",
+            "count": 1,
+            "type": "threecore:item"
+          },
+          "bar_color": "light_gray",
+          "additional_data": {},
+          "commands": ["/playsound minecraft:finisher.rockingtheend master @a ~ ~ ~", "/effect give @e[type=!player, distance=..10] minecraft:wither 10 2 false", "/particle minecraft:soul ~ ~ ~ 10 0 10 1 3500"],
+          "conditions": [ 
+            {
+              "type": "threecore:action",
+              "enabling": true
+            },
+            {
+              "type": "threecore:item_integer_nbt",
+              "custom_title": {
+                "text": "empty"
+              },
+              "invert": false,
+              "enabling": false,
+              "needs_key": false,
+              "slot": "chest",
+              "nbt_tag": "Opening",
+              "min": 29,
+              "max": 30
+            },
+            {
+              "type": "threecore:cooldown",
+              "custom_title": {
+                "text": "empty"
+              },
+              "invert": false,
+              "enabling": false,
+              "needs_key": false,
+              "cooldown": 400
+            }
+          ]
+      },
+      "rockingspark": {
+          "ability": "threecore:command",
+          "show_in_bar": true,
+          "hidden": false,
+          "title": {
+            "translate": "ability.rockingspark"
+          },
+          "icon": {
+            "item": "minecraft:poisonous_potato",
+            "count": 1,
+            "type": "threecore:item"
+          },
+          "bar_color": "light_gray",
+          "additional_data": {},
+          "commands": ["/playsound minecraft:finisher.rockingspark master @a ~ ~ ~", "/effect give @e[type=!player, distance=..10] minecraft:poison 10 2 false", "/particle minecraft:damage_indicator ~ ~ ~ 10 0 10 0 3500"],
+          "conditions": [ 
+            {
+              "type": "threecore:action",
+              "enabling": true
+            },
+            {
+              "type": "threecore:item_integer_nbt",
+              "custom_title": {
+                "text": "empty"
+              },
+              "invert": false,
+              "enabling": false,
+              "needs_key": false,
+              "slot": "chest",
+              "nbt_tag": "Opening",
+              "min": 29,
+              "max": 30
+            },
+            {
+              "type": "threecore:cooldown",
+              "custom_title": {
+                "text": "empty"
+              },
+              "invert": false,
+              "enabling": false,
+              "needs_key": false,
+              "cooldown": 200
+            }
+          ]
+      },
+      "cancel": {
+          "ability": "threecore:command",
+          "show_in_bar": true,
+          "hidden": false,
+          "title": {
+            "translate": "ability.ichigata.rockinghopper"
+          },
+          "icon": {
+            "item": "zeroone:rockingkey",
+            "count": 1,
+            "type": "threecore:item"
+          },
+          "bar_color": "grey",
+          "additional_data": {},
+          "commands": ["/playsound minecraft:cancel.cycloneriser master @a ~ ~ ~", "/replaceitem entity @p armor.chest zeroone:cycloneriser", "/give @s zeroone:rockingkey"],
+          "conditions": [ 
+            {
+              "type": "threecore:action",
+              "enabling": true
+            },
+            {
+              "type": "threecore:equipment_slot",
+              "slot": "chest"
+            },
+            {
+              "type": "threecore:item_integer_nbt",
+              "custom_title": {
+                "text": "empty"
+              },
+              "invert": false,
+              "enabling": false,
+              "needs_key": false,
+              "slot": "chest",
+              "nbt_tag": "Opening",
+              "min": 29,
+              "max": 30
+            }
+          ]
+        },
+        "rockinghoppersound": {
+          "ability": "threecore:command",
+          "show_in_bar": false,
+          "hidden": true,
+          "title": {
+            "translate": "ability.threecore.command"
+          },
+          "icon": {
+            "item": "minecraft:command_block",
+            "count": 1,
+            "type": "threecore:item"
+          },
+          "bar_color": "light_gray",
+          "additional_data": {},
+          "commands": ["/particle minecraft:dragon_breath ~ ~ ~ 1 1 1 0 7000", "/playsound minecraft:riders.ichigata master @a ~ ~ ~"],
+          "conditions": [ 
+            {
+              "type": "threecore:ability_enabled",
+              "custom_title": {
+                "text": "empty"
+              },
+              "invert": false,
+              "enabling": false,
+              "needs_key": false,
+              "ability_id": "henshin"
+            },
+            {
+              "type": "threecore:item_integer_nbt",
+              "custom_title": {
+                "text": "empty"
+              },
+              "invert": false,
+              "enabling": false,
+              "needs_key": false,
+              "slot": "chest",
+              "nbt_tag": "Opening",
+              "min": 0,
+              "max": 1
+            }
+          ]
+        }
+   	}
+}

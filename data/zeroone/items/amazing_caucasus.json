@@ -1,0 +1,71 @@
+{
+	"type": "threecore:default",
+	
+	"properties": {
+		"max_stack_size": 1,
+		"group": "zaia_progrise_keys",
+		"rarity": "rare"
+	},
+
+	"abilities": {
+		"nameopen": {
+    		"ability": "threecore:command",
+    		"show_in_bar": true,
+    		"hidden": false,
+    		"title": {
+      			"translate": "ability.threecore.command"
+    		},
+    		"icon": {
+      			"texture": "zeroone:textures/items/zaia_progrisekeys/amazing_caucasus.png",
+      			"u": 0,
+      			"v": 0,
+      			"width": 16,
+      			"height": 16,
+      			"texture_width": 16,
+      			"texture_height": 16,
+      			"type": "threecore:texture"
+    		},
+    		"bar_color": "yellow",
+    		"additional_data": {},
+    		"commands": [
+          "/playsound minecraft:keys.caucasusname master @a ~ ~ ~",
+          "/replaceitem entity @p weapon.mainhand zeroone:amazing_caucasus_open"
+        ],
+        "conditions": [
+          {
+            "type": "threecore:equipment_slot",
+            "custom_title": {
+              "text": "empty"
+            },
+            "invert": false,
+            "enabling": true,
+            "needs_key": true,
+            "slot": "mainhand"
+          },
+          {
+            "type": "threecore:action",
+            "custom_title": {
+              "text": "empty"
+            },
+            "invert": false,
+            "enabling": true,
+            "needs_key": true
+          },
+          {
+            "type": "threecore:wearing_item",
+            "custom_title": {
+              "translate": "conditions.zeroone.thousandriver_wear"
+            },
+            "invert": false,
+            "enabling": false,
+            "needs_key": false,
+            "chest": [
+              {
+                "item": "zeroone:thousandriver_thouser"
+              }
+            ]
+          }
+        ]
+    	}
+  	}
+}

@@ -1,0 +1,108 @@
+{
+   "type": "threecore:armor",
+
+   "slot": "chest",
+
+   "properties": { 
+      "rarity": "rare"
+   },
+
+   "armor_material": "iron",
+
+   "layers": [
+   		    {
+   			    "type": "threecore:default",
+   			    "model": "zeroone:rider_suits",
+   			    "texture": "zeroone:textures/models/armor/thousandriver/thousandriver.png"
+   		    }
+    ],
+
+    "abilities": {
+      "thouser": {
+          "ability": "threecore:command",
+          "show_in_bar": true,
+          "hidden": false,
+          "title": {
+            "translate": "ability.zeroone.initiatehenshin"
+          },
+          "icon": {
+            "item": "zeroone:awaking_arsino",
+            "count": 1,
+            "type": "threecore:item"
+          },
+          "bar_color": "grey",
+          "additional_data": {},
+          "commands": [
+            "/playsound minecraft:insert.thousandriver master @a ~ ~ ~", 
+            "/replaceitem entity @p armor.chest zeroone:thousandriver_thouser"
+            ],
+          "conditions": [ 
+            {
+              "type": "threecore:action",
+              "enabling": true
+            },
+            {
+              "type": "threecore:equipment_slot",
+              "slot": "chest"
+            },
+            {
+              "type": "threecore:wearing_item",
+              "custom_title": {
+                "translate": "conditions.thousandriver.arsino"
+              },
+              "invert": false,
+              "enabling": false,
+              "needs_key": false,
+              "offhand": [
+                {
+                  "item": "zeroone:awaking_arsino"
+                }
+              ]
+            }
+          ]
+        },
+        "zaia": {
+          "ability": "threecore:command",
+          "show_in_bar": true,
+          "hidden": false,
+          "title": {
+            "translate": "ability.zeroone.initiatehenshin"
+          },
+          "icon": {
+            "item": "zeroone:carnotaurus",
+            "count": 1,
+            "type": "threecore:item"
+          },
+          "bar_color": "red",
+          "additional_data": {},
+          "commands": [
+            "/playsound minecraft:insert.thousandriver master @a ~ ~ ~", 
+            "/replaceitem entity @p armor.chest zeroone:thousandriver_zaia"
+            ],
+          "conditions": [ 
+            {
+              "type": "threecore:action",
+              "enabling": true
+            },
+            {
+              "type": "threecore:equipment_slot",
+              "slot": "chest"
+            },
+            {
+              "type": "threecore:wearing_item",
+              "custom_title": {
+                "translate": "conditions.thousandriver.carnotaurus"
+              },
+              "invert": false,
+              "enabling": false,
+              "needs_key": false,
+              "offhand": [
+                {
+                  "item": "zeroone:carnotaurus"
+                }
+              ]
+            }
+          ]
+        }
+   	}
+}

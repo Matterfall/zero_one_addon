@@ -1,0 +1,19 @@
+{
+   "type": "threecore:armor",
+
+   "slot": "chest",
+
+   "properties": { 
+      "rarity": "rare"
+   },
+
+   "armor_material": "iron",
+
+   "layers": [
+   		{
+   			"type": "threecore:default",
+   			"model": "zeroone:rider_suits",
+   			"texture": "zeroone:textures/models/armor/thousandriver/thousandriver.png"
+   		}
+    ]
+}

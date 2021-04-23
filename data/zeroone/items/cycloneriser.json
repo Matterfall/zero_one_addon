@@ -1,0 +1,61 @@
+{
+   "type": "threecore:armor",
+
+   "slot": "chest",
+
+   "properties": {
+      "group": "riser_tab",
+      "rarity": "rare"
+   },
+
+   "armor_material": "iron",
+
+   "layers": [
+   		    {
+   			    "type": "threecore:default",
+   			    "model": "zeroone:rider_suits",
+   			    "texture": "zeroone:textures/models/armor/ichigata/cycloneriser.png"
+   		    }
+    ],
+
+    "abilities": {
+      "rocking_hopper": {
+          "ability": "threecore:command",
+          "show_in_bar": true,
+          "hidden": false,
+          "title": {
+            "translate": "ability.ichigata.rockinghopper"
+          },
+          "icon": {
+            "item": "zeroone:rockingkey",
+            "count": 1,
+            "type": "threecore:item"
+          },
+          "bar_color": "grey",
+          "additional_data": {},
+          "commands": ["/playsound minecraft:insert.cycloneriser master @a ~ ~ ~", "/replaceitem entity @p armor.chest zeroone:ichigata", "/clear @s zeroone:rockingkey"],
+          "conditions": [ 
+            {
+              "type": "threecore:action",
+              "enabling": true
+            },
+            {
+              "type": "threecore:equipment_slot",
+              "slot": "chest"
+            },
+            {
+                "type": "threecore:wearing_item",
+                "custom_title": {
+                  "text": "empty"
+                },
+                "invert": false,
+                "enabling": false,
+                "needs_key": false,
+                "mainhand": {
+                  "item": "zeroone:rockingkey"
+                }
+              }
+          ]
+        }
+   	}
+}

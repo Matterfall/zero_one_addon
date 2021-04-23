@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " F ",
+        "DE "
+    ],
+    "key": {
+        "D": {
+            "item": "zeroone:forceexecutor"
+        },
+        "E": {
+            "item": "zeroone:cyclonecasing"
+        },
+        "F": {
+            "item": "zeroone:expanded_jack"
+        }
+    },
+    "result": {
+        "item": "zeroone:cycloneriser",
+        "count": 1
+    }
+}

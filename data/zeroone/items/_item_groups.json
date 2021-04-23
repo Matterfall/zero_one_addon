@@ -1,0 +1,26 @@
+[
+  {
+    "name": "progrise_keys",
+    "icon": {
+      "item": "zeroone:rockingkey"
+    }
+  },
+  {
+    "name": "zaia_progrise_keys",
+    "icon": {
+      "item": "zeroone:amazing_caucasus"
+    }
+  },
+  {
+  	"name": "riser_tab",
+  	"icon": {
+  		"item": "zeroone:cycloneriser"
+  	}
+  },
+  {
+  	"name": "zeroone_parts",
+  	"icon": {
+  		"item": "zeroone:cyclonecasing"
+  	}
+  }
+]

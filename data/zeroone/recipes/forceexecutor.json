@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "DDD",
+        "D  "
+    ],
+    "key": {
+        "D": {
+            "item": "threecore:red_fabric"
+        }
+    },
+    "result": {
+        "item": "zeroone:forceexecutor",
+        "count": 1
+    }
+}

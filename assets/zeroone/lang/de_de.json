@@ -1,0 +1,31 @@
+{
+	"itemGroup.progrise_keys": "Progrise Schlüssel",
+	"itemGroup.riser_tab": "Riser",
+	"itemGroup.zeroone_parts": "Teile",
+	"itemGroup.zaia_progrise_keys": "Progrise Schlüssel (ZAIA)",
+
+	"ability.zeroone.initiatehenshin": "Starte Transformation",
+
+	"conditions.zeroone.thousandriver_wear": "Trage den ThousanDriver im Standby Modus",
+	"conditions.thousandriver.arsino": "Halte den Awaking Arsino Zetsumerise Schlüssel in deiner offhand",
+	"conditions.thousandriver.carnotaurus": "Halte den Carnotaurus Zetsumerise Schlüssel in deiner offhand",
+
+	"item.zeroone.forceexecutor": "Force Exekutierer",
+	"item.zeroone.expanded_jack": "Erweiterter Jack",
+	"item.zeroone.cyclonecasing": "Zyklon Gehäuse",
+
+	"item.zeroone.amazing_caucasus": "Amazing Caucasus Progrise Schlüssel",
+	"item.zeroone.awaking_arsino": "Awaking Arsino Progrise Schlüssel",
+	"item.zeroone.triceratops": "Triceratops Progrise Schlüssel",
+	"item.zeroone.carnotaurus": "Carnotaurus Progrise Schlüssel",
+	
+	"item.zeroone.rockingkey": "Rocking Hopper Zetsumerise Schlüssel",
+
+	"item.zeroone.cycloneriser": "Zyklonriser", 
+	"item.zeroone.ichigata": "Zyklonriser (Ichigata)",
+
+	"item.zeroone.thousandriver_inactive": "ThousanDriver (Inaktif)",
+	"item.zeroone.thousandriver": "ThousanDriver",
+	"item.zeroone.thousandriver_thouser": "ThousanDriver",
+	"item.zeroone.thousandriver_zaia": "ThousanDriver"
+}

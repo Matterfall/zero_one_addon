@@ -1,0 +1,57 @@
+{
+	"keys.rockingname": {
+		"sounds": [
+			"keys/rockinghopper1"
+		]
+	},
+	"keys.rockingability": {
+		"sounds": [
+			"keys/rockinghopper2"
+		]
+	},
+	"insert.cycloneriser": {
+		"sounds": [
+			"standby/cycloneinsert"
+		]
+	},
+	"standby.cycloneriser": {
+		"sounds": [
+			"standby/cyclonestandby"
+		]
+	},
+	"riders.ichigata": {
+		"sounds": [
+			"riders/rockinghopper"
+		]
+	},
+	"cancel.cycloneriser": {
+		"sounds": [
+			"cancel/cyclonecancel"
+		]
+	},
+	"finisher.rockingspark": {
+		"sounds": [
+			"finishers/rockingspark"
+		]
+	},
+	"finisher.rockingtheend": {
+		"sounds": [
+			"finishers/rockingtheend"
+		]
+	},
+	"driver.thousandriver": {
+		"sounds": [
+			"drivers/thousandriver"
+		]
+	},
+	"standby.thousandriver": {
+		"sounds": [
+			"standby/thousandriver"
+		]
+	},
+	"cancel.thousandriver": {
+		"sounds": [
+			"cancel/thousandriver"
+		]
+	}
+}
